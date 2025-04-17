@@ -51,17 +51,17 @@
 
   <script>
     const tarotCards = [
-      { zh: "愚者", en: "The Fool", upright_zh: "冒險、開始新旅程", upright_en: "Adventure, new beginnings", reversed_zh: "魯莽、缺乏方向", reversed_en: "Recklessness, lack of direction" },
-      { zh: "魔術師", en: "The Magician", upright_zh: "創造力、掌握機會", upright_en: "Creativity, taking opportunities", reversed_zh: "欺騙、技巧不足", reversed_en: "Deception, lack of skill" },
-      { zh: "女祭司", en: "The High Priestess", upright_zh: "直覺、神秘", upright_en: "Intuition, mystery", reversed_zh: "隱瞞、不信任直覺", reversed_en: "Concealment, distrust of intuition" },
-      { zh: "皇后", en: "The Empress", upright_zh: "豐饒、母性、創造力", upright_en: "Abundance, motherhood, creativity", reversed_zh: "過度依賴、停滯", reversed_en: "Overdependence, stagnation" },
-      { zh: "皇帝", en: "The Emperor", upright_zh: "穩定、領導、秩序", upright_en: "Stability, leadership, order", reversed_zh: "控制欲、僵化", reversed_en: "Control issues, rigidity" },
-      { zh: "教皇", en: "The Hierophant", upright_zh: "傳統、精神指導", upright_en: "Tradition, spiritual guidance", reversed_zh: "反叛、拒絕常規", reversed_en: "Rebellion, nonconformity" },
-      { zh: "戀人", en: "The Lovers", upright_zh: "愛情、選擇、和諧", upright_en: "Love, choices, harmony", reversed_zh: "分離、猶豫", reversed_en: "Separation, indecision" },
-      { zh: "戰車", en: "The Chariot", upright_zh: "勝利、控制、自律", upright_en: "Victory, control, discipline", reversed_zh: "失控、挫敗", reversed_en: "Lack of control, defeat" },
-      { zh: "力量", en: "Strength", upright_zh: "勇氣、內在力量", upright_en: "Courage, inner strength", reversed_zh: "脆弱、懦弱", reversed_en: "Weakness, insecurity" },
-      { zh: "隱者", en: "The Hermit", upright_zh: "內省、指導、自我探索", upright_en: "Introspection, guidance, self-exploration", reversed_zh: "孤立、迷失", reversed_en: "Isolation, aimlessness" }
-    ];
+  { zh: "愚者", en: "The Fool", upright_zh: "冒險、開始新旅程", upright_en: "Adventure, new beginnings", reversed_zh: "魯莽、缺乏方向", reversed_en: "Recklessness, lack of direction" },
+  { zh: "魔術師", en: "The Magician", upright_zh: "創造力、掌握機會", upright_en: "Creativity, taking opportunities", reversed_zh: "欺騙、技巧不足", reversed_en: "Deception, lack of skill" },
+  { zh: "女祭司", en: "The High Priestess", upright_zh: "直覺、神秘", upright_en: "Intuition, mystery", reversed_zh: "隱瞞、不信任直覺", reversed_en: "Concealment, distrust of intuition" },
+  { zh: "皇后", en: "The Empress", upright_zh: "豐饒、母性、創造力", upright_en: "Abundance, motherhood, creativity", reversed_zh: "過度依賴、停滯", reversed_en: "Overdependence, stagnation" },
+  { zh: "皇帝", en: "The Emperor", upright_zh: "穩定、領導、秩序", upright_en: "Stability, leadership, order", reversed_zh: "控制欲、僵化", reversed_en: "Control issues, rigidity" },
+  { zh: "教皇", en: "The Hierophant", upright_zh: "傳統、精神指導", upright_en: "Tradition, spiritual guidance", reversed_zh: "反叛、拒絕常規", reversed_en: "Rebellion, nonconformity" },
+  { zh: "戀人", en: "The Lovers", upright_zh: "愛情、選擇、和諧", upright_en: "Love, choices, harmony", reversed_zh: "分離、猶豫", reversed_en: "Separation, indecision" },
+  { zh: "戰車", en: "The Chariot", upright_zh: "勝利、控制、自律", upright_en: "Victory, control, discipline", reversed_zh: "失控、挫敗", reversed_en: "Lack of control, defeat" },
+  { zh: "力量", en: "Strength", upright_zh: "勇氣、內在力量", upright_en: "Courage, inner strength", reversed_zh: "脆弱、懦弱", reversed_en: "Weakness, insecurity" },
+  { zh: "隱者", en: "The Hermit", upright_zh: "內省、指導、自我探索", upright_en: "Introspection, guidance, self-exploration", reversed_zh: "孤立、迷失", reversed_en: "Isolation, aimlessness" }
+];
 
     function drawCards(count) {
       let drawn = [...tarotCards].sort(() => 0.5 - Math.random()).slice(0, count);
